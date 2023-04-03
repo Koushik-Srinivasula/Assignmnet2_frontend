@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo "Cloning repository..."
+      - git clone https://github.com/username/repo.git
+      - cd repo
+      - echo "Syncing files with S3 bucket..."
+      - aws s3 sync . s3://your-bucket-name
+
+artifacts:
+  files:
+    - '**/*'
