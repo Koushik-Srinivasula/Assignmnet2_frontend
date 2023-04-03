@@ -5,7 +5,6 @@ phases:
     commands:
       - echo "Cloning repository..."
       - git clone https://github.com/Koushik-Srinivasula/Assignmnet2_frontend
-      - cd repo
       - echo "Syncing files with S3 bucket..."
       - aws s3 sync . s3://photos-bucket-ks
 
