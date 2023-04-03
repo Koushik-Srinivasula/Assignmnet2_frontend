@@ -1,2 +1,1 @@
-# Assignmnet2_frontend
-test
+# CCBD-Photo-Album
